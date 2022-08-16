@@ -1,0 +1,12 @@
+<div>
+  <tr>
+    <button class="btn btn-success" (click)="onStart()">Start Game</button>
+    |
+    <button class="btn btn-primary" (click)="onEnd()">Pause Game</button>
+    |
+    <button class="btn btn-danger" (click)="onFinish()">End Game</button>
+  </tr>
+  <div *ngIf="shouldShowMessage">
+    <h4> {{ startingMessage }}</h4>
+  </div>
+</div>
